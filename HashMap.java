@@ -33,5 +33,16 @@ public class HashMapDemo {
         System.out.println(hashMap);
         hashMap.remove(3);
         System.out.println(hashMap);
+
+        HashMap<String, Integer> hashMap1 = new HashMap<>();
+        hashMap1.put("nitin", 10);
+        hashMap1.put("nikhil", 11);
+        hashMap1.put("veer", 12);
+
+        Integer res1 = hashMap1.getOrDefault("Shivang", 0);
+        System.out.println(res1);
+
+        hashMap1.putIfAbsent("veer", 111);
+        System.out.println(hashMap1);
     }
 }
